@@ -6,6 +6,7 @@ export async function getSession() {
     return await getServerSession(authOptions);
 }
 
+//We purposely don't throw any errors becuase we don't want everything to break... 
 export default async function getCurrentUser() {
     try {
         const session = await getSession();
