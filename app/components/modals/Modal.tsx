@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({
 
         //FOR ANIMATION PURPOSES
         setTimeout(() => {
-            onClose()
+            onClose();
         }, 300)
     }, [disabled, onClose]);
 
